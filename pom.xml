@@ -66,9 +66,8 @@
 				<artifactId>heroku-maven-plugin</artifactId>
 				<version>3.0.2</version>
 				<configuration>
-					<appName>wfhcfbackend</appName>
 					<processTypes>
-						<web>java -Dserver.port$PORT $JAVA_OPTS -cp target/classes:target/dependency/* com.wfhc.app.wfhc.WfhcApplication</web>
+						<web>java $JAVA_OPTS -cp target/classes:target/dependency/* com.wfhc.app.wfhc.WfhcApplication</web>
 					</processTypes>
 				</configuration>
 			</plugin>
